@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ImigraJá</title>
+    <link rel="icon" type="image/png" href="ous.jfif"">
+    <style>
+      .card {
+        cursor: url("buy.png") 10 10, auto;
+        background-color: lightgray;
+        text-align: center;
+      }
+      .card {
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        width: 220px;
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+        position: relative;
+      }
+      .card img {
+        border-radius: 10px;
+        width: 100%;
+      }
+      .tag-oferta {
+        position: absolute;
+        background-color: red;
+        color: white;
+        padding: 4px 8px;
+        border-radius: 5px;
+      }
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        height: 1500px;
+      }
+      .parallax {
+        background-image: url("https://dillysports.vtexassets.com/assets/vtex.file-manager-graphql/images/2ba37c8a-f87e-408c-91b4-16c1b3ccee34___d8820469529556ee6744893dc23188fb.jpg");
+        height: 500px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* Flexbox para centralizar o conteúdo */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+      .galeria {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 250px;
+      }
+      .centralizada{
+            border: 2px solid black;
+            width: 300px;
+            margin: auto;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: lightgray;
+        }
+        img{
+            transition: transform 2s;
+        }
+        img:hover{
+            transform: rotateY(360deg);
+        }
+    </style>
+  </head>
+  <body>
+    <div class="parallax">
+      <h1>Bem-vindo</h1>
+    </div>
+    <h1></h1>
+    <div class="galeria">
+      <div class="card">
+        <div class="tag-oferta">Oferta</div>
+        <img
+          src="https://surfalive.fbitsstatic.net/img/p/tenis-vans-old-skool-preto-67524/24336-1.jpg?w=800&h=800&v=no-change&qs=ignore"
+          width="200"
+        />
+        <h2>tenis</h2>
+        <p>vans preto e branco</p>
+      </div>
+
+      <div class="card">
+        <div class="tag-oferta">Oferta</div>
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPZUSKziDwcik1ckJeZ_zrRjLDaO58P-M9JA&s"
+          width="200"
+        />
+        <h2>tenis</h2>
+        <p>tenis preto</p>
+      </div>
+      <div class="card">
+        <div class="tag-oferta">Oferta</div>
+        <img
+          src="https://www.voxsneakers.com/cdn/shop/articles/Travis-Scott-Fragment-Air-Jordan-1-Low-OG-Release-Date-11-min-546893.jpg?v=1643724284"
+          width="200"
+        />
+        <h2>tenis</h2>
+        <p>nike Travis-Scott</p>
+      </div>
+      <div class="card">
+        <div class="tag-oferta">Oferta</div>
+        <img
+          src="https://dillysports.vtexassets.com/arquivos/ids/235342-500-auto?v=638944166030930000&width=500&height=auto&aspect=true"
+          width="200"
+        />
+        <h2>tenis</h2>
+        <p>OUS imperial creme</p>
+      </div>
+      <div class="card">
+        <div class="tag-oferta">Oferta</div>
+        <img
+          src="https://dillysports.vtexassets.com/arquivos/ids/228189-500-auto?v=638857856939100000&width=500&height=auto&aspect=true"
+          width="200"
+        />
+        <h2>Jaqueta</h2>
+        <p>Jaqueta escolar preta</p>
+      </div>
+      <div class="card">
+        <div class="tag-oferta">Oferta</div>
+        <img
+          src="https://dillysports.vtexassets.com/arquivos/ids/226704-500-auto?v=638833549985770000&width=500&height=auto&aspect=true"
+          width="200"
+        />
+        <h2>Sueter</h2>
+        <p>Sueter Imperial OCTOPUS</p>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="centralizada">
+      Aceitamos todos os cartões de crédito!
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <a class="centralizada" href="https://www.ous.com.br/checkout/#/cart">Ir para a area de pagamento</a>
+  
+<!-- Plugin VLibras -->
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+  </body>
+</html>
